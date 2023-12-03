@@ -47,6 +47,7 @@ public class Main {
         assert counts.exchange == 3 : "The expected are 3 exchange batteries, but got " + counts.exchange;
         assert counts.failed == 1 : "The expected are 1 failed battery, but got " + counts.failed;
         System.out.println("Done counting :)\n");
+        //Printing the number of each batteries
           System.out.println("The number of healthy batteries:"+counts.healthy);
         System.out.println("The number of exchange batteries:"+counts.exchange);
         System.out.println("The number of failed batteries:"+counts.failed);
