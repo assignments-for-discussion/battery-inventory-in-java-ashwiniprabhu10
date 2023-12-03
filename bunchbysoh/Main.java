@@ -10,7 +10,7 @@ public class Main {
 
     static CountsBySoH countBatteriesByHealth(int[] presentCapacities) {
         CountsBySoH counts = new CountsBySoH();//creating an object of CountsBySoH class
-
+//Iterating through the presentCapacities of battery to find their SoH
         for (int presentCapacity : presentCapacities) {
             // Calculate state of health (SoH)
             double soh = calculateSoH(presentCapacity);
