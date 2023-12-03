@@ -43,9 +43,9 @@ public class Main {
         System.out.println("Counting batteries by SoH...\n");
         int[] presentCapacities = {113, 116, 80, 95, 92, 70};
         CountsBySoH counts = countBatteriesByHealth(presentCapacities);
-        assert(counts.healthy == 2);
-        assert(counts.exchange == 3);
-        assert(counts.failed == 1);
+     assert counts.healthy == 2 : "The expected are 2 healthy batteries, but got " + counts.healthy;
+        assert counts.exchange == 3 : "The expected are 3 exchange batteries, but got " + counts.exchange;
+        assert counts.failed == 1 : "The expected are 1 failed battery, but got " + counts.failed;
         System.out.println("Done counting :)\n");
     }
 
