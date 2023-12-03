@@ -7,11 +7,11 @@ public class Main {
         public int exchange = 0;
         public int failed = 0;
     }
-
-    static CountsBySoH countBatteriesByHealth(int[] presentCapacities) {
+static CountsBySoH countBatteriesByHealth(int[] presentCapacities) {
         CountsBySoH counts = new CountsBySoH();//creating an object of CountsBySoH class
-//Iterating through the presentCapacities of battery to find their SoH
-        for (int presentCapacity : presentCapacities) {
+
+        for (int presentCapacity : presentCapacities)//Iterating through the presentCapacities of battery to find their SoH
+            {
             // Calculate state of health (SoH)
             double soh = calculateSoH(presentCapacity);
 
@@ -30,8 +30,7 @@ public class Main {
 
         return counts;
     }
-
-    static double calculateSoH(int presentCapacity) {
+static double calculateSoH(int presentCapacity) {
         // Assuming all batteries have a rated capacity of 120Ah
         int ratedCapacity = 120;
 
